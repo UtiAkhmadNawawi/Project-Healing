@@ -18,10 +18,10 @@
                                 <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                                 <select name="" id="" class="form-control" placeholder="Keyword search">
                                     <option value="">Where</option>
-                                    <option value="">San Francisco USA</option>
-                                    <option value="">Berlin Germany</option>
-                                    <option value="">Lodon United Kingdom</option>
-                                    <option value="">Paris Italy</option>
+                                    <option value="">Bali</option>
+                                    <option value="">Jakarta</option>
+                                    <option value="">Bandung</option>
+                                    <option value="">Semarang</option>
                                 </select>
                             </div>
                         </div>

@@ -6,32 +6,52 @@ class Register extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('auth');
+		$this->load->model('Auth');
 	}
 
 	public function index()
 	{
-		$this->load->view('vw_register');
+        $this->load->view('User/v_header');
+        $this->load->view('User/v_register.php');
+        $this->load->view('User/v_header');
 	}
 
 	public function proses()
 	{
-		$this->form_validation->set_rules('username', 'username','trim|required|min_length[1]|max_length[255]|is_unique[tb_user.username]');
-		$this->form_validation->set_rules('password', 'password','trim|required|min_length[1]|max_length[255]');
-		$this->form_validation->set_rules('nama', 'nama','trim|required|min_length[1]|max_length[255]');
-		if ($this->form_validation->run()==true)
+		// var_dump($_POST);exit();
+		$this->form_validation->set_rules('username', 'username',
+		'trim|required|min_length[1]|max_length[255]',[
+            'required' => 'nama harus di isi',
+            'min_length' => 'nama terlalu pendek'
+        ]);
+		$this->form_validation->set_rules('password', 'password','trim|required|min_length[8]|max_length[255]',[
+            'required' => 'password harus di isi',
+            'min_length' => 'password terlalu pendek'
+        ]);
+		$this->form_validation->set_rules('email', 'email','trim|required|min_length[10]|max_length[255]|is_unique[tb_user.email]',[
+            'required' => 'email harus di isi',
+            'min_length' => 'email terlalu pendek',
+			'is_unique' => 'Email sudah terdaftar'
+        ]);
+		$this->form_validation->set_rules('re_password', 'Password Confirmation', 'required|matches[password]',[
+			'matches' => 'Password harus sama'
+		]);
+		$this->form_validation->set_rules('agree-term', 'agree-term Confirmation', 'required',[
+			'required' => 'Harap setujui terms of service'
+		]);
+		if ($this->form_validation->run()!=true)
 	   	{
-			$username = $this->input->post('username');
-			$password = $this->input->post('password');
-			$nama = $this->input->post('nama');
-			$this->auth->register($username,$password,$nama);
-			$this->session->set_flashdata('success_register','Proses Pendaftaran User Berhasil');
-			redirect('login');
+			$this->session->set_flashdata('error', validation_errors());
+			redirect('Register');
 		}
 		else
 		{
-			$this->session->set_flashdata('error', validation_errors());
-			redirect('register');
+			$username = $this->input->post('username');
+			$password = $this->input->post('password');
+			$email = $this->input->post('email');
+			$this->Auth->register($username,$password,$email);
+			$this->session->set_flashdata('success_register','Proses Pendaftaran User Berhasil');
+			redirect('Home');
 		}
 	}
 }

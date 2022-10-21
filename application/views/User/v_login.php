@@ -5,12 +5,12 @@
             <div class="signin-image">
                 <figure><img src="<?php echo base_url() ?>
 registerCSS/images/signin-image.jpg" alt="sing up image"></figure>
-                <a href="http://localhost/project-Healing/User/register/" class="signup-image-link">Create an
+                <a href="http://localhost/project-Healing/Register/index" class="signup-image-link">Create an
                     account</a>
             </div>
 
             <div class="signin-form">
-                <h2 class="form-title">Sign up</h2>
+                <h2 class="form-title">Sign in</h2>
 
                 <?php 
 				if($this->session->flashdata('error') !='')
@@ -34,7 +34,7 @@ registerCSS/images/signin-image.jpg" alt="sing up image"></figure>
                     action="<?php echo base_url(); ?>Login/proses">
                     <div class="form-group">
                         <label for="username"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                        <input type="text" name="username" id="username" placeholder="Your Name" />
+                        <input type="text" name="username" id="username" placeholder="Your email" />
                     </div>
                     <div class="form-group">
                         <label for="password"><i class="zmdi zmdi-lock"></i></label>

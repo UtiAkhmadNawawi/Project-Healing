@@ -48,7 +48,7 @@
                     <li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
                     <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item cta"><a href="http://localhost/project-Healing/User/register"
+                    <li class="nav-item cta"><a href="http://localhost/project-Healing/Register/index"
                             class="nav-link"><span>Sign in or
                                 Register</span></a></li>
                 </ul>

@@ -8,22 +8,32 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
-                        <form method="POST" class="register-form" id="register-form">
+                        <?php 
+				            if($this->session->flashdata('error') !='')
+				            {
+					            echo '<div class="alert alert-danger" role="alert">';
+					            echo $this->session->flashdata('error');
+					            echo '</div>';
+				            }
+				        ?>
+                        <form method="POST" class="register-form" id="register-form"
+                            action="<?php echo base_url(); ?>Register/proses">
                             <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Name" />
+                                <label for="username"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="username" id="username" placeholder="Your Name" />
                             </div>
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
                                 <input type="email" name="email" id="email" placeholder="Your Email" />
                             </div>
                             <div class="form-group">
-                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="Password" />
+                                <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="password" id="password" placeholder="Password" />
                             </div>
                             <div class="form-group">
-                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" />
+                                <label for="re_password"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_password" id="re_password"
+                                    placeholder="Repeat your password" />
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
@@ -43,7 +53,7 @@
                             <span class="social-label">Already registered?</span>
                             <ul class="socials">
                                 <li>
-                                    <a href="http://localhost/project-Healing/User/login/"
+                                    <a href="http://localhost/project-Healing/Login/index"
                                         class="signup-image-link">Login</a>
                                 </li>
                             </ul>
