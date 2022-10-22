@@ -32,7 +32,8 @@
                 <p class="browse d-md-flex">
                     <span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i
                                 class="flaticon-fork"></i>Restaurant</a></span>
-                    <span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i
+                    <span class="d-flex justify-content-md-center align-items-md-center"><a
+                            href="http://localhost/project-Healing/Hotel/index"><i
                                 class="flaticon-hotel"></i>Hotel</a></span>
                     <span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i
                                 class="flaticon-meeting-point"></i>Places</a></span>

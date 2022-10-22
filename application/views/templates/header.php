@@ -43,11 +43,15 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="http://localhost/project-Healing/" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="tour.html" class="nav-link">Tour</a></li>
-                    <li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
+                    <li class="nav-item"><a href="http://localhost/project-Healing/About/index"
+                            class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="http://localhost/project-Healing/Tour/index" class="nav-link">Tour</a>
+                    </li>
+                    <li class="nav-item"><a href="http://localhost/project-Healing/Hotel/index"
+                            class="nav-link">Hotel</a></li>
                     <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="http://localhost/project-Healing/Contact/index"
+                            class="nav-link">Contact</a></li>
                     <li class="nav-item cta"><a href="http://localhost/project-Healing/Register/index"
                             class="nav-link"><span>Sign in or
                                 Register</span></a></li>

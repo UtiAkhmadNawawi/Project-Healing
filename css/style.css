@@ -3183,8 +3183,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.5rem 1rem; }
   .nav-link:hover, .nav-link:focus {
-    text-decoration: none;
-  }
+    text-decoration: none; }
   .nav-link.disabled {
     color: #6c757d; }
 
@@ -7322,7 +7321,7 @@ h1, h2, h3, h4, h5,
     color: #fff;
     font-weight: 400;
     opacity: 1 !important; }
-  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
       color: #fff; }
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
     border: none;
