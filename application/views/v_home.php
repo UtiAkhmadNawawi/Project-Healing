@@ -1,4 +1,4 @@
-<div class="hero-wrap js-fullheight" style="background-image: url('<?php echo base_url() ?>images/bg_1.jpg');">
+<div class="hero-wrap js-fullheight" style="background-image: url('<?php echo base_url() ?>images/bg.jpg');">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
@@ -116,7 +116,7 @@
                                 </div>
                             </a>
                             <div class="text p-3">
-                                <h3><a href="#">Paris, Italy</a></h3>
+                                <h3><a href="#">Bandung</a></h3>
                                 <span class="listing">15 Listing</span>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                                 </div>
                             </a>
                             <div class="text p-3">
-                                <h3><a href="#">San Francisco, USA</a></h3>
+                                <h3><a href="#">Bali</a></h3>
                                 <span class="listing">20 Listing</span>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                                 </div>
                             </a>
                             <div class="text p-3">
-                                <h3><a href="#">Lodon, UK</a></h3>
+                                <h3><a href="#">Lombok</a></h3>
                                 <span class="listing">10 Listing</span>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
                                 </div>
                             </a>
                             <div class="text p-3">
-                                <h3><a href="#">Lion, Singapore</a></h3>
+                                <h3><a href="#">Jakarta</a></h3>
                                 <span class="listing">3 Listing</span>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
                                 </div>
                             </a>
                             <div class="text p-3">
-                                <h3><a href="#">Australia</a></h3>
+                                <h3><a href="#">Bogor</a></h3>
                                 <span class="listing">3 Listing</span>
                             </div>
                         </div>
@@ -186,7 +186,7 @@
                                 </div>
                             </a>
                             <div class="text p-3">
-                                <h3><a href="#">Paris, Italy</a></h3>
+                                <h3><a href="#">Yogyakarta</a></h3>
                                 <span class="listing">3 Listing</span>
                             </div>
                         </div>
@@ -219,7 +219,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Paris, Italy</a></h3>
+                                <h3><a href="#">Bandung</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -254,7 +254,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Paris, Italy</a></h3>
+                                <h3><a href="#">Bandung</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -289,7 +289,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Paris, Italy</a></h3>
+                                <h3><a href="#">Bandung</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -324,7 +324,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Paris, Italy</a></h3>
+                                <h3><a href="#">Bandung</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -359,7 +359,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Paris, Italy</a></h3>
+                                <h3><a href="#">Bandung</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -388,7 +388,7 @@
 </section>
 
 <section class="ftco-section ftco-counter img" id="section-counter"
-    style="background-image: url(<?php echo base_url() ?>images/bg_1.jpg);">
+    style="background-image: url(<?php echo base_url() ?>images/bg.jpg);">
     <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
