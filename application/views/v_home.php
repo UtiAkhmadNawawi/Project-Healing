@@ -6,8 +6,8 @@
             <div class="col-md-9 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                 <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><strong>Explore
                         <br></strong> your amazing city</h1>
-                <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Find great places to stay, eat,
-                    shop, or visit from local experts</p>
+                <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Temukan tempat yang bagus untuk menginap, makan, berbelanja, 
+                    atau mengunjungi tempat wisata favoritmu</p>
                 <div class="block-17 my-4">
                     <form action="" method="post" class="d-block d-flex">
                         <div class="fields d-block d-flex">
