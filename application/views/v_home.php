@@ -338,7 +338,7 @@
                                 <span class="price">Rp 20K</span>
                             </div>
                         </div>
-                        <p>Lihat replika Candi Borobudur, Desa Budaya, dan lebih dari 60 rumah tradisional khas Indonesia, Nikmati pemandangan tebing yang indah, serta suara air sungai Melangit yang mengalir</p>
+                        <p>Lihat replika Candi Borobudur, Desa Budaya, dan lebih dari 60 rumah tradisional khas Indonesia</p>
                         <p class="days"><span>Jam Buka (Waktu Setempat)  : Sel,09:00-18:00/span></p>
                         <hr>
                         <p class="bottom-area d-flex">
@@ -373,7 +373,7 @@
                                 <span class="price">Rp130K</span>
                             </div>
                         </div>
-                        <p>Cobalah berbagai wahana air dengan 8 kolam utama, seperti Poseidon, Antila, Plaza Atlas, Aquarius, Octopus, Atlantean, dan Kiddy Pool</p>
+                        <p>Cobalah berbagai wahana air dengan 8 kolam utama</p>
                         <p class="days"><span>Jam Buka (Waktu Setempat)  : Kam,09:00-15:30</span></p>
                         <hr>
                         <p class="bottom-area d-flex">

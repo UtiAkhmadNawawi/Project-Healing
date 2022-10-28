@@ -7817,7 +7817,7 @@ h1, h2, h3, h4, h5,
           .destination .text .bottom-area span:last-child {
             margin-left: 5px; } }
         .destination .text .bottom-area span:last-child a {
-          background: #8bc34a;
+          background: #f85959;
           color: #fff;
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px;
@@ -8508,7 +8508,7 @@ textarea.form-control {
     background: -ms-linear-gradient(-45deg, #2ebdc4 0%, #68e5b2 100%);
     background: -webkit-linear-gradient(315deg, #2ebdc4 0%, #68e5b2 100%);
     background: -o-linear-gradient(315deg, #2ebdc4 0%, #68e5b2 100%);
-    background: linear-gradient(135deg, #2ebdc4 0%, #68e5b2 100%);
+    background: linear-gradient(135deg, #f63333 0%, #f85959 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebdc4', endColorstr='#68e5b2', GradientType=1 ); }
 
 .ftco-counter {
