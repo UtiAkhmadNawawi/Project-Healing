@@ -27,6 +27,12 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>css/flaticon.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>css/icomoon.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>css/style.css">
+    <script type="text/javascript">
+    window.onload = function() { //from ww  w . j  a  va2s. c  o  m
+        var today = new Date().toISOString().split('T')[0];
+        document.getElementsByName("checkin_date")[0].setAttribute('min', today);
+    }
+    </script>
 </head>
 
 <body>
