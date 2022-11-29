@@ -12,7 +12,7 @@ class Register extends CI_Controller {
 	public function index()
 	{
         $this->load->view('User/v_header');
-        $this->load->view('User/v_register.php');
+        $this->load->view('User/v_register');
         $this->load->view('User/v_header');
 	}
 
@@ -55,3 +55,5 @@ class Register extends CI_Controller {
 		}
 	}
 }
+
+?>

@@ -460,7 +460,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Hotel, Italy</a></h3>
+                                <h3><a href="#">Janévalla Bandung</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -471,13 +471,13 @@
                                 </p>
                             </div>
                             <div class="two">
-                                <span class="price per-price">$40<br><small>/night</small></span>
+                                <span class="price per-price">Rp 1.111.111<br><small>/night</small></span>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
+                        <p>Jalan Aceh No. 65, Bandung, Jawa Barat, Merdeka, Bandung, Jawa Barat, Indonesia, 40115</p>
                         <hr>
                         <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> Miami, Fl</span>
+                            <span><i class="icon-map-o"></i> Bandung</span>
                             <span class="ml-auto"><a href="#">Book Now</a></span>
                         </p>
                     </div>
@@ -494,7 +494,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Hotel, Italy</a></h3>
+                                <h3><a href="#">ASTON Hotel</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -505,13 +505,13 @@
                                 </p>
                             </div>
                             <div class="two">
-                                <span class="price per-price">$40<br><small>/night</small></span>
+                                <span class="price per-price">Rp 583.440<br><small>/night</small></span>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
+                        <p>Jalan Gatot Subroto No. 283, Denpasar Utara, Denpasar, Bali, Indonesia, 80231</p>
                         <hr>
                         <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> Miami, Fl</span>
+                            <span><i class="icon-map-o"></i> Bali</span>
                             <span class="ml-auto"><a href="#">Book Now</a></span>
                         </p>
                     </div>
@@ -520,7 +520,7 @@
             <div class="col-sm col-md-6 col-lg ftco-animate">
                 <div class="destination">
                     <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
-                        style="background-image: url(<?php echo base_url() ?>images/hotel-3.jpg);">
+                        style="background-image: url(<?php echo base_url() ?>images/hotel-3.webp);">
                         <div class="icon d-flex justify-content-center align-items-center">
                             <span class="icon-search2"></span>
                         </div>
@@ -528,7 +528,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Hotel, Italy</a></h3>
+                                <h3><a href="#">THE 1O1 Bogor</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -539,13 +539,13 @@
                                 </p>
                             </div>
                             <div class="two">
-                                <span class="price per-price">$40<br><small>/night</small></span>
+                                <span class="price per-price">Rp 1.860.000<br><small>/night</small></span>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
+                        <p>Suryakancana 179 - 181, Jalan Suryakencana, Bogor, Jawa Barat, Indonesia, 16141</p>
                         <hr>
                         <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> Miami, Fl</span>
+                            <span><i class="icon-map-o"></i> Bogor</span>
                             <span class="ml-auto"><a href="#">Book Now</a></span>
                         </p>
                     </div>
