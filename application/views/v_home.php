@@ -6,8 +6,8 @@
             <div class="col-md-9 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                 <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><strong>Explore
                         <br></strong> your amazing city</h1>
-                <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Find great places to stay, eat,
-                    shop, or visit from local experts</p>
+                <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Temukan tempat yang bagus untuk menginap, makan, berbelanja, 
+                    atau mengunjungi tempat wisata favoritmu</p>
                 <div class="block-17 my-4">
                     <form action="" method="post" class="d-block d-flex">
                         <div class="fields d-block d-flex">
@@ -211,7 +211,7 @@
             <div class="col-sm col-md-6 col-lg ftco-animate">
                 <div class="destination">
                     <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
-                        style="background-image: url(<?php echo base_url() ?>images/destination-1.jpg);">
+                        style="background-image: url(<?php echo base_url() ?>images/package-1.jpg);">
                         <div class="icon d-flex justify-content-center align-items-center">
                             <span class="icon-search2"></span>
                         </div>
@@ -219,7 +219,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Bandung</a></h3>
+                                <h3><a href="#">Trans Studio Bandung</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -230,15 +230,15 @@
                                 </p>
                             </div>
                             <div class="two">
-                                <span class="price">$200</span>
+                                <span class="price">Rp 200K</span>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
-                        <p class="days"><span>2 days 3 nights</span></p>
+                        <p>Habiskan waktu di salah satu taman bermain indoor terbesar di Indonesia</p>
+                        <p class="days"><span>Jam Buka (Waktu Setempat)  : Sel,11:00-17:00</span></p>
                         <hr>
                         <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                            <span class="ml-auto"><a href="#">Discover</a></span>
+                            <span><i class="icon-map-o"></i> Buah Batu</span>
+                            <span class="ml-auto"><a href="#">Book Now</a></span>
                         </p>
                     </div>
                 </div>
@@ -246,7 +246,7 @@
             <div class="col-sm col-md-6 col-lg ftco-animate">
                 <div class="destination">
                     <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
-                        style="background-image: url(<?php echo base_url() ?>images/destination-2.jpg);">
+                        style="background-image: url(<?php echo base_url() ?>images/package-2.jpg);">
                         <div class="icon d-flex justify-content-center align-items-center">
                             <span class="icon-search2"></span>
                         </div>
@@ -254,7 +254,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Bandung</a></h3>
+                                <h3><a href="#">Farmhouse </a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -265,15 +265,15 @@
                                 </p>
                             </div>
                             <div class="two">
-                                <span class="price">$200</span>
+                                <span class="price">Rp 20K</span>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
-                        <p class="days"><span>2 days 3 nights</span></p>
+                        <p>Cicipi susu segar yang nikmat sambil menikmati indahnya pemandangan dataran tinggi Lembang</p>
+                        <p class="days"><span>Jam Buka (Waktu Setempat)  : Sel,09:00-20:00</span></p>
                         <hr>
                         <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                            <span class="ml-auto"><a href="#">Discover</a></span>
+                            <span><i class="icon-map-o"></i> Lembang</span>
+                            <span class="ml-auto"><a href="#">Book Now</a></span>
                         </p>
                     </div>
                 </div>
@@ -281,7 +281,7 @@
             <div class="col-sm col-md-6 col-lg ftco-animate">
                 <div class="destination">
                     <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
-                        style="background-image: url(<?php echo base_url() ?>images/destination-3.jpg);">
+                        style="background-image: url(<?php echo base_url() ?>images/package-3.jpg);">
                         <div class="icon d-flex justify-content-center align-items-center">
                             <span class="icon-search2"></span>
                         </div>
@@ -289,7 +289,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Bandung</a></h3>
+                                <h3><a href="#">Tiket Bali Zoo</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -300,15 +300,15 @@
                                 </p>
                             </div>
                             <div class="two">
-                                <span class="price">$200</span>
+                                <span class="price">Rp 80K</span>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
-                        <p class="days"><span>2 days 3 nights</span></p>
+                        <p>Bali Zoo adalah rumah bagi lebih dari 500 hewan dari seluruh dunia. </p>
+                        <p class="days"><span>Jam Buka (Waktu Setempat)  : Sel,09:00-17:00</span></p>
                         <hr>
                         <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                            <span class="ml-auto"><a href="#">Discover</a></span>
+                            <span><i class="icon-map-o"></i> Ubud</span>
+                            <span class="ml-auto"><a href="#">Book Now</a></span>
                         </p>
                     </div>
                 </div>
@@ -316,7 +316,7 @@
             <div class="col-sm col-md-6 col-lg ftco-animate">
                 <div class="destination">
                     <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
-                        style="background-image: url(<?php echo base_url() ?>images/destination-4.jpg);">
+                        style="background-image: url(<?php echo base_url() ?>images/package-4.jpg);">
                         <div class="icon d-flex justify-content-center align-items-center">
                             <span class="icon-search2"></span>
                         </div>
@@ -324,7 +324,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Bandung</a></h3>
+                                <h3><a href="#">Taman Nusa Bali</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -335,15 +335,15 @@
                                 </p>
                             </div>
                             <div class="two">
-                                <span class="price">$200</span>
+                                <span class="price">Rp 20K</span>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
-                        <p class="days"><span>2 days 3 nights</span></p>
+                        <p>Lihat replika Candi Borobudur, Desa Budaya, dan lebih dari 60 rumah tradisional khas Indonesia</p>
+                        <p class="days"><span>Jam Buka (Waktu Setempat)  : Sel,09:00-18:00/span></p>
                         <hr>
                         <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                            <span class="ml-auto"><a href="#">Discover</a></span>
+                            <span><i class="icon-map-o"></i> Gianyar Kota</span>
+                            <span class="ml-auto"><a href="#">Book Now</a></span>
                         </p>
                     </div>
                 </div>
@@ -351,7 +351,7 @@
             <div class="col-sm col-md-6 col-lg ftco-animate">
                 <div class="destination">
                     <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
-                        style="background-image: url(<?php echo base_url() ?>images/destination-5.jpg);">
+                        style="background-image: url(<?php echo base_url() ?>images/package-5.jpg);">
                         <div class="icon d-flex justify-content-center align-items-center">
                             <span class="icon-search2"></span>
                         </div>
@@ -359,7 +359,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Bandung</a></h3>
+                                <h3><a href="#">Tiket Atlantis Water Adventure Ancol</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -370,15 +370,15 @@
                                 </p>
                             </div>
                             <div class="two">
-                                <span class="price">$200</span>
+                                <span class="price">Rp130K</span>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
-                        <p class="days"><span>2 days 3 nights</span></p>
+                        <p>Cobalah berbagai wahana air dengan 8 kolam utama</p>
+                        <p class="days"><span>Jam Buka (Waktu Setempat)  : Kam,09:00-15:30</span></p>
                         <hr>
                         <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                            <span class="ml-auto"><a href="#">Discover</a></span>
+                            <span><i class="icon-map-o"></i> Ancol</span>
+                            <span class="ml-auto"><a href="#">Book Now</a></span>
                         </p>
                     </div>
                 </div>
@@ -460,7 +460,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Hotel, Italy</a></h3>
+                                <h3><a href="#">Janévalla Bandung</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -471,13 +471,13 @@
                                 </p>
                             </div>
                             <div class="two">
-                                <span class="price per-price">$40<br><small>/night</small></span>
+                                <span class="price per-price">Rp 1.111.111<br><small>/night</small></span>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
+                        <p>Jalan Aceh No. 65, Bandung, Jawa Barat, Merdeka, Bandung, Jawa Barat, Indonesia, 40115</p>
                         <hr>
                         <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> Miami, Fl</span>
+                            <span><i class="icon-map-o"></i> Bandung</span>
                             <span class="ml-auto"><a href="#">Book Now</a></span>
                         </p>
                     </div>
@@ -494,7 +494,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Hotel, Italy</a></h3>
+                                <h3><a href="#">ASTON Hotel</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -505,13 +505,13 @@
                                 </p>
                             </div>
                             <div class="two">
-                                <span class="price per-price">$40<br><small>/night</small></span>
+                                <span class="price per-price">Rp 583.440<br><small>/night</small></span>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
+                        <p>Jalan Gatot Subroto No. 283, Denpasar Utara, Denpasar, Bali, Indonesia, 80231</p>
                         <hr>
                         <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> Miami, Fl</span>
+                            <span><i class="icon-map-o"></i> Bali</span>
                             <span class="ml-auto"><a href="#">Book Now</a></span>
                         </p>
                     </div>
@@ -520,7 +520,7 @@
             <div class="col-sm col-md-6 col-lg ftco-animate">
                 <div class="destination">
                     <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
-                        style="background-image: url(<?php echo base_url() ?>images/hotel-3.jpg);">
+                        style="background-image: url(<?php echo base_url() ?>images/hotel-3.webp);">
                         <div class="icon d-flex justify-content-center align-items-center">
                             <span class="icon-search2"></span>
                         </div>
@@ -528,7 +528,7 @@
                     <div class="text p-3">
                         <div class="d-flex">
                             <div class="one">
-                                <h3><a href="#">Hotel, Italy</a></h3>
+                                <h3><a href="#">THE 1O1 Bogor</a></h3>
                                 <p class="rate">
                                     <i class="icon-star"></i>
                                     <i class="icon-star"></i>
@@ -539,13 +539,13 @@
                                 </p>
                             </div>
                             <div class="two">
-                                <span class="price per-price">$40<br><small>/night</small></span>
+                                <span class="price per-price">Rp 1.860.000<br><small>/night</small></span>
                             </div>
                         </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
+                        <p>Suryakancana 179 - 181, Jalan Suryakencana, Bogor, Jawa Barat, Indonesia, 16141</p>
                         <hr>
                         <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> Miami, Fl</span>
+                            <span><i class="icon-map-o"></i> Bogor</span>
                             <span class="ml-auto"><a href="#">Book Now</a></span>
                         </p>
                     </div>
