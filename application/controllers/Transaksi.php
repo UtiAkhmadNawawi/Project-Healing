@@ -26,7 +26,7 @@ class Transaksi extends CI_Controller {
     public function index(){
         // $data['mahasiswa'] = $this->M_mahasiswa->tampil_data()->result();
         $this->load->view('templates/header');
-		$this->load->view('v_hotel-single');
+		$this->load->view('v_transaksi');
         // $this->load->view('templates/mahasiswa', $data);
 		$this->load->view('templates/footer');
     }
@@ -66,7 +66,7 @@ class Transaksi extends CI_Controller {
 
 			$this->Available->reservasi($username,$email,$chekin,$chekout,$guest,$child);
 			$this->session->set_flashdata('success_register','Proses Pendaftaran User Berhasil');
-			redirect('Home');
+			redirect('Invoice');
 		}
 	}
 }

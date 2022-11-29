@@ -18,10 +18,16 @@ class Hotel extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
+	public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('M_kamar');
+    }
 	public function index(){
         // $data['mahasiswa'] = $this->M_mahasiswa->tampil_data()->result();
+		$data['tb_kamar'] = $this->M_kamar->data_kamar();
         $this->load->view('templates/header');
-		$this->load->view('v_hotel');
+		$this->load->view('v_hotel',$data);
         // $this->load->view('templates/mahasiswa', $data);
 		$this->load->view('templates/footer');
     }

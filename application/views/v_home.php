@@ -30,15 +30,15 @@
                 </div>
                 <p>Or browse the highlights</p>
                 <p class="browse d-md-flex">
-                    <span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i
-                                class="flaticon-fork"></i>Restaurant</a></span>
+                    <!-- <span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i
+                                class="flaticon-fork"></i>Restaurant</a></span> -->
                     <span class="d-flex justify-content-md-center align-items-md-center"><a
                             href="http://localhost/project-Healing/Hotel/index"><i
                                 class="flaticon-hotel"></i>Hotel</a></span>
                     <span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i
                                 class="flaticon-meeting-point"></i>Places</a></span>
-                    <span class="d-flex justify-content-md-center align-items-md-	center"><a href="#"><i
-                                class="flaticon-shopping-bag"></i>Shopping</a></span>
+                    <!-- <span class="d-flex justify-content-md-center align-items-md-	center"><a href="#"><i
+                                class="flaticon-shopping-bag"></i>Shopping</a></span> -->
                 </p>
             </div>
         </div>
@@ -699,7 +699,7 @@
     </div>
 </section>
 
-<section class="ftco-section">
+<!-- <section class="ftco-section">
     <div class="container">
         <div class="row justify-content-start mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate">
@@ -734,93 +734,93 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="destination">
-                    <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
-                        style="background-image: url(<?php echo base_url() ?>images/restaurant-2.jpg);">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="icon-search2"></span>
-                        </div>
-                    </a>
-                    <div class="text p-3">
-                        <h3><a href="#">Luxury Restaurant</a></h3>
-                        <p class="rate">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star-o"></i>
-                            <span>8 Rating</span>
-                        </p>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
-                        <hr>
-                        <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                            <span class="ml-auto"><a href="#">Book Now</a></span>
-                        </p>
-                    </div>
+    </div>
+    <div class="col-md-6 col-lg-3 ftco-animate">
+        <div class="destination">
+            <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
+                style="background-image: url(<?php echo base_url() ?>images/restaurant-2.jpg);">
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <span class="icon-search2"></span>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="destination">
-                    <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
-                        style="background-image: url(<?php echo base_url() ?>images/restaurant-3.jpg);">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="icon-search2"></span>
-                        </div>
-                    </a>
-                    <div class="text p-3">
-                        <h3><a href="#">Luxury Restaurant</a></h3>
-                        <p class="rate">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star-o"></i>
-                            <span>8 Rating</span>
-                        </p>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
-                        <hr>
-                        <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                            <span class="ml-auto"><a href="#">Book Now</a></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="destination">
-                    <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
-                        style="background-image: url(<?php echo base_url() ?>images/restaurant-4.jpg);">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="icon-search2"></span>
-                        </div>
-                    </a>
-                    <div class="text p-3">
-                        <h3><a href="#">Luxury Restaurant</a></h3>
-                        <p class="rate">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star-o"></i>
-                            <span>8 Rating</span>
-                        </p>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
-                        <hr>
-                        <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                            <span class="ml-auto"><a href="#">Book Now</a></span>
-                        </p>
-                    </div>
-                </div>
+            </a>
+            <div class="text p-3">
+                <h3><a href="#">Luxury Restaurant</a></h3>
+                <p class="rate">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-o"></i>
+                    <span>8 Rating</span>
+                </p>
+                <p>Far far away, behind the word mountains, far from the countries</p>
+                <hr>
+                <p class="bottom-area d-flex">
+                    <span><i class="icon-map-o"></i> San Franciso, CA</span>
+                    <span class="ml-auto"><a href="#">Book Now</a></span>
+                </p>
             </div>
         </div>
     </div>
-</section>
+    <div class="col-md-6 col-lg-3 ftco-animate">
+        <div class="destination">
+            <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
+                style="background-image: url(<?php echo base_url() ?>images/restaurant-3.jpg);">
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <span class="icon-search2"></span>
+                </div>
+            </a>
+            <div class="text p-3">
+                <h3><a href="#">Luxury Restaurant</a></h3>
+                <p class="rate">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-o"></i>
+                    <span>8 Rating</span>
+                </p>
+                <p>Far far away, behind the word mountains, far from the countries</p>
+                <hr>
+                <p class="bottom-area d-flex">
+                    <span><i class="icon-map-o"></i> San Franciso, CA</span>
+                    <span class="ml-auto"><a href="#">Book Now</a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-3 ftco-animate">
+        <div class="destination">
+            <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
+                style="background-image: url(<?php echo base_url() ?>images/restaurant-4.jpg);">
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <span class="icon-search2"></span>
+                </div>
+            </a>
+            <div class="text p-3">
+                <h3><a href="#">Luxury Restaurant</a></h3>
+                <p class="rate">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-o"></i>
+                    <span>8 Rating</span>
+                </p>
+                <p>Far far away, behind the word mountains, far from the countries</p>
+                <hr>
+                <p class="bottom-area d-flex">
+                    <span><i class="icon-map-o"></i> San Franciso, CA</span>
+                    <span class="ml-auto"><a href="#">Book Now</a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section> -->
 
-<section class="ftco-section bg-light">
+<!-- <section class="ftco-section bg-light">
     <div class="container">
         <div class="row justify-content-start mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate">
@@ -899,7 +899,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="ftco-section-parallax">
     <div class="parallax-img d-flex align-items-center">
