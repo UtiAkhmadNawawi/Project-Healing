@@ -21,7 +21,12 @@ class Transaksi extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Available');
+		$this->load->model('M_authLogin');
+		if(!$this->M_authLogin->current_user()){
+			redirect('AuthLogin/login');
+		};
+		$this->load->model('M_tamu');
+		$this->load->model('M_reservation');
 	}
     public function index(){
         // $data['mahasiswa'] = $this->M_mahasiswa->tampil_data()->result();
@@ -34,21 +39,37 @@ class Transaksi extends CI_Controller {
     public function proses()
     {
         // var_dump($_POST);exit();
-        $this->form_validation->set_rules('username', 'username',
+        $this->form_validation->set_rules('nama', 'nama',
 		    'trim|required|min_length[1]|max_length[255]',[
             'required' => 'nama harus di isi',
             'min_length' => 'nama terlalu pendek'
         ]);
-		$this->form_validation->set_rules('email', 'email','trim|required|min_length[10]|max_length[255]|is_unique[tb_reservation.email]',[
-            'required' => 'email harus di isi',
-            'min_length' => 'email terlalu pendek',
-			'is_unique' => 'Email sudah terdaftar'
+		$this->form_validation->set_rules('no_identitas', 'no_identitas','trim|required|min_length[1]|max_length[10]',[
+            'required' => 'No identitas harus di isi',
+            'min_length' => 'NO identitas terlalu pendek',
+			'is_unique' => 'No identitas sudah terdaftar'
+			// |is_unique[tb_reservation.email]'
         ]);
-		$this->form_validation->set_rules('checkin_date', 'checkin_date ', 'required',[
-            'required' => 'Tanggal harus di isi'
+		$this->form_validation->set_rules('telepon', 'telepon ', 'required',[
+            'required' => 'no telepon harus di isi'
+		]);
+		$this->form_validation->set_rules('kota', 'kota', 'required',[
+            'required' => 'kota harus di isi'
+		]);
+		$this->form_validation->set_rules('alamat', 'alamat', 'required',[
+            'required' => 'alamat harus di isi'
+		]);
+		$this->form_validation->set_rules('checkin_date', 'checkin_date', 'required',[
+            'required' => 'tanggal cehekin harus di isi'
 		]);
 		$this->form_validation->set_rules('checkout_date', 'checkout_date', 'required',[
-            'required' => 'Tanggal harus di isi'
+            'required' => 'tanggal chekout harus di isi'
+		]);
+		$this->form_validation->set_rules('guest', 'guest', 'required',[
+            'required' => 'jumlah tamu harus di isi'
+		]);
+		$this->form_validation->set_rules('child', 'child', 'required',[
+            'required' => 'jumlah anak harus di isi'
 		]);
 		if ($this->form_validation->run()!=true)
         {
@@ -57,14 +78,21 @@ class Transaksi extends CI_Controller {
 		}
 		else
 		{
-			$username = $this->input->post('username');
-			$email = $this->input->post('email');
-			$chekin = $this->input->post('checkin_date');
-			$chekout = $this->input->post('checkout_date');
-			$guest = $this->input->post('guest');
+			// data tamu
+			$username = $this->input->post('nama');
+			$alamat = $this->input->post('alamat');
+			$identitasNO = $this->input->post('no_identitas');
+			$telepon = $this->input->post('telepon');
+			$kota = $this->input->post('kota');
+			//data reservasi
 			$child = $this->input->post('child');
+			$Bed = $this->input->post('Bed');
+			$guest = $this->input->post('guest');
+			$checkin_date = $this->input->post('checkin_date');
+			$checkout_date = $this->input->post('checkout_date');
 
-			$this->Available->reservasi($username,$email,$chekin,$chekout,$guest,$child);
+			$this->M_tamu->dataTamu($username,$alamat,$identitasNO,$telepon,$kota);
+			$this->M_reservation->dataReservation($username,$Bed,$child,$guest,$checkin_date,$checkout_date);
 			$this->session->set_flashdata('success_register','Proses Pendaftaran User Berhasil');
 			redirect('Invoice');
 		}

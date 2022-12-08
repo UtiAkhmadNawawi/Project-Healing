@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="text" class="form-control" name="username" id="username" placeholder="Name">
+                        <input type="text" class="form-control" name="nama" id="nama" placeholder="Name">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -34,17 +34,19 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <input type="text" class="form-control" name="no_identitas" id="no_identitas"
-                            placeholder="alamat">
+                            placeholder="No KTP">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="date" name="checkin_date" id="" class="form-control" placeholder="Date from">
+                        <input type="text" name="checkin_date" id="checkin_date" class="form-control"
+                            placeholder="Date from">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="date" name="checkout_date" id="" class="form-control" placeholder="Date to">
+                        <input type="text" name="checkout_date" id="checkin_date" class="form-control"
+                            placeholder="Date to">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -79,7 +81,7 @@
                     <div class="form-group">
                         <div class="select-wrap one-third">
                             <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                            <select name="child" id="child" class="form-control" placeholder="Children">
+                            <select name="Bed" id="Bed" class="form-control" placeholder="Bed">
                                 <option value="0">Bed</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>

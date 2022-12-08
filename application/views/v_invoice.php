@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Invoice</title>
+    <title>Healing.id| Invoice</title>
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -100,7 +100,7 @@
                 <div class="col-xs-12">
                     <h2 class="page-header">
                         <i class="fa fa-globe"></i> HealingID
-                        <small class="pull-right">Date: 2/10/2014</small>
+                        <small class="pull-right">Date: 6/12/2022</small>
                     </h2>
                 </div>
 
@@ -120,12 +120,10 @@
                 <div class="col-sm-4 invoice-col">
                     To
                     <address>
-                        <strong>John Doe</strong><br>
-                        795 Folsom Ave, Suite 600<br>
-                        San Francisco, CA 94107<br>
-                        Phone: (555) 539-1037<br>
+                        <strong>Uti Akhmad Nawawi</strong><br>
+                        Phone: 085848171373<br>
                         Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                            data-cfemail="4b21242325652f242e0b2e332a263b272e65282426">[email&#160;protected]</a>
+                            data-cfemail="4b21242325652f242e0b2e332a263b272e65282426">utiakhmadnawawi110@gmail.com</a>
                     </address>
                 </div>
 
@@ -133,8 +131,7 @@
                     <b>Invoice #007612</b><br>
                     <br>
                     <b>Order ID:</b> 4F3S8J<br>
-                    <b>Payment Due:</b> 2/22/2014<br>
-                    <b>Account:</b> 968-34567
+                    <b>Payment Due:</b> 06/12/2022<br>
                 </div>
 
             </div>
@@ -145,41 +142,24 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>Qty</th>
+                                <th>NO</th>
                                 <th>Product</th>
-                                <th>Serial #</th>
+                                <th>type</th>
                                 <th>Description</th>
+                                <th>Chek in</th>
+                                <th>Chek out</th>
                                 <th>Subtotal</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Call of Duty</td>
-                                <td>455-981-221</td>
-                                <td>El snort testosterone trophy driving gloves handsome</td>
-                                <td>$64.50</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Need for Speed IV</td>
-                                <td>247-925-726</td>
-                                <td>Wes Anderson umami biodiesel</td>
-                                <td>$50.00</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Monsters DVD</td>
-                                <td>735-845-642</td>
-                                <td>Terry Richardson helvetica tousled street art master</td>
-                                <td>$10.70</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Grown Ups Blue Ray</td>
-                                <td>422-568-642</td>
-                                <td>Tousled lomo letterpress</td>
-                                <td>$25.99</td>
+                                <td>OYO hotel</td>
+                                <td>Delux</td>
+                                <td>Double Bed</td>
+                                <td>06-12-2022</td>
+                                <td>07-12-2022</td>
+                                <td>Rp.350000</td>
                             </tr>
                         </tbody>
                     </table>
@@ -196,31 +176,29 @@
                     <img src="<?php echo base_url() ?>dist/img/credit/american-express.png" alt="American Express">
                     <img src="<?php echo base_url() ?>dist/img/credit/paypal2.png" alt="Paypal">
                     <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
-                        Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango
-                        imeem plugg dopplr
-                        jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
+                        Healing.id Corporation
                     </p>
                 </div>
 
                 <div class="col-xs-6">
-                    <p class="lead">Amount Due 2/22/2014</p>
+                    <p class="lead">Details :</p>
                     <div class="table-responsive">
                         <table class="table">
                             <tr>
                                 <th style="width:50%">Subtotal:</th>
-                                <td>$250.30</td>
+                                <td>Rp.350000</td>
                             </tr>
                             <tr>
-                                <th>Tax (9.3%)</th>
-                                <td>$10.34</td>
+                                <th>Tax </th>
+                                <td>Rp.0</td>
                             </tr>
                             <tr>
-                                <th>Shipping:</th>
-                                <td>$5.80</td>
+                                <th>Discount </th>
+                                <td>Rp.0</td>
                             </tr>
                             <tr>
                                 <th>Total:</th>
-                                <td>$265.24</td>
+                                <td>Rp.350000</td>
                             </tr>
                         </table>
                     </div>

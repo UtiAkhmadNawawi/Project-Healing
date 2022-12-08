@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sign in</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="<?php echo base_url() ?>
+registerCSS/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="<?php echo base_url() ?>
+registerCSS/css/style.css">
+</head>
 <!-- Sing in  Form -->
 <section class="sign-in">
     <div class="container">
@@ -5,7 +21,7 @@
             <div class="signin-image">
                 <figure><img src="<?php echo base_url() ?>
 registerCSS/images/signin-image.jpg" alt="sing up image"></figure>
-                <a href="http://localhost/project-Healing/Register/index" class="signup-image-link">Create an
+                <a href="http://localhost/project-Healing/AuthLogin/register" class="signup-image-link">Create an
                     account</a>
             </div>
 
@@ -13,10 +29,10 @@ registerCSS/images/signin-image.jpg" alt="sing up image"></figure>
                 <h2 class="form-title">Sign in</h2>
 
                 <?php 
-				if($this->session->flashdata('error') !='')
+				if($this->session->flashdata('message_login_error') !='')
 				{
 					echo '<div class="alert alert-danger" role="alert">';
-					echo $this->session->flashdata('error');
+					echo $this->session->flashdata('message_login_error');
 					echo '</div>';
 				}
 				?>
@@ -31,10 +47,10 @@ registerCSS/images/signin-image.jpg" alt="sing up image"></figure>
 				?>
 
                 <form method="POST" class="register-form" id="login-form"
-                    action="<?php echo base_url(); ?>Login/proses">
+                    action="<?php echo base_url(); ?>AuthLogin/login">
                     <div class="form-group">
-                        <label for="username"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                        <input type="text" name="username" id="username" placeholder="Your email" />
+                        <label for="email"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="text" name="email" id="email" placeholder="Your email" />
                     </div>
                     <div class="form-group">
                         <label for="password"><i class="zmdi zmdi-lock"></i></label>
@@ -61,3 +77,8 @@ registerCSS/images/signin-image.jpg" alt="sing up image"></figure>
         </div>
     </div>
 </section>
+<!-- JS -->
+<script src="<?php echo base_url() ?>
+registerCSS/vendor/jquery/jquery.min.js"></script>
+<script src="<?php echo base_url() ?>
+registerCSS/js/main.js"></script>

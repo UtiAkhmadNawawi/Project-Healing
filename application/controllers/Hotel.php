@@ -22,6 +22,10 @@ class Hotel extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('M_kamar');
+		$this->load->model('M_authLogin');
+		if(!$this->M_authLogin->current_user()){
+			redirect('AuthLogin/login');
+		}
     }
 	public function index(){
         // $data['mahasiswa'] = $this->M_mahasiswa->tampil_data()->result();
@@ -31,4 +35,13 @@ class Hotel extends CI_Controller {
         // $this->load->view('templates/mahasiswa', $data);
 		$this->load->view('templates/footer');
     }
+
+	public function hotelsingle()
+	{
+		$data['tb_kamar'] = $this->M_kamar->data_kamar();
+		$this->load->view('templates/header');
+		$this->load->view('v_hotel-single',$data);
+        // $this->load->view('templates/mahasiswa', $data);
+		$this->load->view('templates/footer');
+	}
 }

@@ -23,6 +23,10 @@ class Invoice extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('M_Invoice');
+		$this->load->model('M_authLogin');
+		if(!$this->M_authLogin->current_user()){
+			redirect('AuthLogin/login');
+		}
 	}
     public function index(){
         // $data['mahasiswa'] = $this->M_mahasiswa->tampil_data()->result();

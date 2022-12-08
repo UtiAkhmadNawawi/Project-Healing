@@ -18,9 +18,13 @@ class Booking extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
-	function __construct()
+	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model('M_authLogin');
+		if(!$this->M_authLogin->current_user()){
+			redirect('AuthLogin/login');
+		}
 	}
     public function index(){
         // $data['mahasiswa'] = $this->M_mahasiswa->tampil_data()->result();

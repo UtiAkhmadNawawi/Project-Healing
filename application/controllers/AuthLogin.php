@@ -1,23 +1,50 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Register extends CI_Controller {
-
-	function __construct()
-	{
-		parent::__construct();
-		$this->load->model('Auth');
-	}
-
+class AuthLogin extends CI_Controller
+{
 	public function index()
 	{
-        $this->load->view('User/v_header');
-        $this->load->view('User/v_register');
-        $this->load->view('User/v_header');
+		show_404();
 	}
 
-	public function proses()
+	public function login()
 	{
+		$this->load->model('M_authLogin');
+		$this->load->library('form_validation');
+
+		$rules = $this->M_authLogin->rules();
+		$this->form_validation->set_rules($rules);
+
+		if($this->form_validation->run() == FALSE){
+			return  $this->load->view('User/v_login.php');
+		}
+        // var_dump($_POST);exit();
+		$email = $this->input->post('email');
+		$password = $this->input->post('password');
+
+		if($this->M_authLogin->login($email, $password)){
+			redirect('Home');
+		} else {
+			$this->session->set_flashdata('message_login_error', 'Login Gagal, pastikan email dan passwrod benar!');
+		}
+
+		$this->load->view('User/v_login.php');
+	}
+
+	public function logout()
+	{
+		$this->load->model('M_authLogin');
+		$this->M_authLogin->logout();
+		$this->M_authLogin->_update_last_login($user_id);
+
+		redirect(site_url());
+	}
+
+	public function register()
+	{
+		$this->load->model('M_authLogin');
+		$this->load->library('form_validation');
+
 		// var_dump($_POST);exit();
 		$this->form_validation->set_rules('username', 'username',
 		'trim|required|min_length[1]|max_length[255]',[
@@ -42,18 +69,19 @@ class Register extends CI_Controller {
 		if ($this->form_validation->run()!=true)
 	   	{
 			$this->session->set_flashdata('error', validation_errors());
-			redirect('Register');
+			return $this->load->view('User/v_register');
 		}
+		// if($this->form_validation->run() == FALSE){
+		// 	return  $this->load->view('User/v_register.php');
+		// }
 		else
 		{
 			$username = $this->input->post('username');
 			$password = $this->input->post('password');
 			$email = $this->input->post('email');
-			$this->Auth->register($username,$password,$email);
+			$this->M_authLogin->register($username,$password,$email);
 			$this->session->set_flashdata('success_register','Proses Pendaftaran User Berhasil');
-			redirect('Home');
+			redirect('Authlogin/login');
 		}
 	}
 }
-
-?>

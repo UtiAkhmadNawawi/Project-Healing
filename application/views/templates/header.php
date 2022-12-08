@@ -27,12 +27,6 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>css/flaticon.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>css/icomoon.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>css/style.css">
-    <script type="text/javascript">
-    window.onload = function() { //from ww  w . j  a  va2s. c  o  m
-        var today = new Date().toISOString().split('T')[0];
-        document.getElementsByName("checkin_date")[0].setAttribute('min', today);
-    }
-    </script>
 </head>
 
 <body>
@@ -47,7 +41,8 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="http://localhost/project-Healing/" class="nav-link">Home</a>
+                    <li class="nav-item active"><a href="http://localhost/project-Healing/Home"
+                            class="nav-link">Home</a>
                     </li>
                     <li class="nav-item"><a href="http://localhost/project-Healing/About/index"
                             class="nav-link">About</a></li>
@@ -58,9 +53,11 @@
                     <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
                     <li class="nav-item"><a href="http://localhost/project-Healing/Contact/index"
                             class="nav-link">Contact</a></li>
-                    <li class="nav-item cta"><a href="http://localhost/project-Healing/Register/index"
+                    <!-- <li class="nav-item cta"><a href="http://localhost/project-Healing/Register/index"
                             class="nav-link"><span>Sign in or
-                                Register</span></a></li>
+                                Register</span></a></li> -->
+                    <li class="nav-item"><a href="http://localhost/project-Healing/Authlogin/logout"
+                            class="nav-link">logout</a></li>
                 </ul>
             </div>
         </div>

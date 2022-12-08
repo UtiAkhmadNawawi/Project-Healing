@@ -42,12 +42,18 @@
                                     aria-labelledby="v-pills-whatwedo-tab">
                                     <div>
                                         <h2 class="mb-4">Offering Reliable Hosting</h2>
-                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                            Consonantia, there live the blind texts. Separated they live in
-                                            Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                                        <p>Healing.id, Southeast Asia’s lifestyle superapp,
+                                            provides users access to discover and purchase a wide range of travel,
+                                            local services, and financial services products.
+
                                         </p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate,
-                                            quibusdam sunt iste dolores consequatur</p>
+                                        <p>Healing.id comprehensive product portfolio includes transport booking
+                                            services such as flight tickets, bus,
+                                            trains, car rental, airport transfer, as well as access to the largest
+                                            accommodation inventory in Southeast Asia,
+                                            including hotels, apartments, guest houses, homestays,
+                                            resorts, and villas, making Healing a booking platform with the widest
+                                            selection of accommodation and packages.</p>
                                     </div>
                                 </div>
 

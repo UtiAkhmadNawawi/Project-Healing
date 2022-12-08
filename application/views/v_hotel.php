@@ -116,7 +116,7 @@
                     <div class="col-md-4 ftco-animate">
                         <div class="destination">
 
-                            <a href="http://localhost/project-Healing/Hotel_single/index"
+                            <a href="http://localhost/project-Healing/Hotel/hotelsingle"
                                 class="img img-2 d-flex justify-content-center align-items-center"
                                 style="background-image: url(<?php echo base_url() ?>images/<?= $TK['gambar']?>);">
                                 <div class="icon d-flex justify-content-center align-items-center">
@@ -127,7 +127,7 @@
                                 <div class="d-flex">
                                     <div class="one">
                                         <h3><a
-                                                href="http://localhost/project-Healing/Hotel_single/index"><?= $TK['nama_hotel'] ?></a>
+                                                href="http://localhost/project-Healing/Hotel/hotelsingle"><?= $TK['nama_hotel'] ?></a>
                                         </h3>
                                         <p class="rate">
                                             <i class="icon-star"></i>
