@@ -61,6 +61,7 @@ class M_authLogin extends CI_Model
 
 		$user_id = $this->session->userdata(self::SESSION_KEY);
 		$query = $this->db->get_where($this->_table, ['user_id' => $user_id]);
+		// var_dump($query->row());exit();
 		return $query->row();
 	}
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>sign up</title>
+    <title>sign up Healing.id</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="<?php echo base_url() ?>

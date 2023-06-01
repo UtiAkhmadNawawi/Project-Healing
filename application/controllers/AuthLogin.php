@@ -28,6 +28,7 @@ class AuthLogin extends CI_Controller
 			$this->session->set_flashdata('message_login_error', 'Login Gagal, pastikan email dan passwrod benar!');
 		}
 
+		
 		$this->load->view('User/v_login.php');
 	}
 
