@@ -41,22 +41,21 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="http://localhost/project-Healing/Home"
+                    <li class="nav-item active"><a href="<?= base_url()?>index.php/Home"
                             class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item"><a href="http://localhost/project-Healing/About/index"
+                    <li class="nav-item"><a href="<?= base_url()?>index.php/About/index"
                             class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="http://localhost/project-Healing/Tour/index" class="nav-link">Tour</a>
                     </li>
-                    <li class="nav-item"><a href="http://localhost/project-Healing/Hotel/index"
+                    <li class="nav-item"><a href="<?= base_url()?>index.php/Hotel/index"
                             class="nav-link">Hotel</a></li>
                     <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
-                    <li class="nav-item"><a href="http://localhost/project-Healing/Contact/index"
+                    <li class="nav-item"><a href="<?= base_url()?>index.php/Contact/index"
                             class="nav-link">Contact</a></li>
                     <!-- <li class="nav-item cta"><a href="http://localhost/project-Healing/Register/index"
                             class="nav-link"><span>Sign in or
                                 Register</span></a></li> -->
-                    <li class="nav-item"><a href="http://localhost/project-Healing/Authlogin/logout"
+                    <li class="nav-item"><a href="<?= base_url()?>index.php/Authlogin/logout"
                             class="nav-link">logout</a></li>
                 </ul>
             </div>

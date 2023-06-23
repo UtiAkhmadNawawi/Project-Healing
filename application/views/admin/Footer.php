@@ -187,5 +187,20 @@
 <script src="<?php echo base_url() ?>AdminCSS/assets/js/chart-hotel.js"></script>
 <script src="<?php echo base_url() ?>AdminCSS/assets/js/demo-setting.js"></script>
 <script src="<?php echo base_url() ?>AdminCSS/assets/js/scripts.js"></script>
+<!-- Kode HTML lainnya -->
+
+<script>
+    // Mendapatkan elemen <a> berdasarkan selector
+    var linkElement = document.querySelector('a[data-bs-toggle="modal"]');
+
+    // Menangkap nilai ID saat tautan diklik
+    linkElement.addEventListener('click', function(e) {
+        e.preventDefault();
+        var id = this.getAttribute('data-id');
+        // Lakukan operasi dengan nilai ID yang diterima
+        console.log(id);
+    });
+</script>
+
 
 </html>

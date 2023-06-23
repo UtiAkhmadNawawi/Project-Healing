@@ -161,7 +161,7 @@
                             </tr>
                             <tr>
                                 <th style="width:50%">Status:</th>
-                                <td>Lunas</td>
+                                <td>Belum Bayar</td>
                             </tr>
                             
                         </table>
@@ -169,8 +169,7 @@
                 </div>
 
             </div>
-            <button><a href="<?= base_url()?>index.php/Order/print_pdf">Cetak</a></button>
-            <button><a href="<?= base_url()?>index.php/home">Kembali</a></button>
+            <button><a href="<?= base_url()?>index.php/payment">Bayar</a></button>
 
         </section>
 

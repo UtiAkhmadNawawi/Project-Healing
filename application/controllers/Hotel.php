@@ -29,19 +29,45 @@ class Hotel extends CI_Controller {
     }
 	public function index(){
         // $data['mahasiswa'] = $this->M_mahasiswa->tampil_data()->result();
-		$data['tb_kamar'] = $this->M_kamar->data_kamar();
+		$hotel = $this->M_hotel->getAllHotel();
+
+		$data = array(
+			'hotel' => $hotel
+		);
         $this->load->view('templates/header');
 		$this->load->view('v_hotel',$data);
         // $this->load->view('templates/mahasiswa', $data);
 		$this->load->view('templates/footer');
     }
 
-	public function hotelsingle()
+	public function getKamarByHotel($id)
 	{
-		$data['tb_kamar'] = $this->M_kamar->data_kamar();
+		$daftarkamar = $this->M_kamar->getRoomByHotel($id);
+		$hotel = $this->M_hotel->getHotelById($id);
+		
+		
+
+		$data = array(
+			'daftarkamar' => $daftarkamar,
+			'hotel' => $hotel
+		);
 		$this->load->view('templates/header');
-		$this->load->view('v_hotel-single',$data);
-        // $this->load->view('templates/mahasiswa', $data);
+		$this->load->view('User/Hotel/daftar-kamar',$data);
 		$this->load->view('templates/footer');
 	}
+
+	public function searchHotel(){
+		$nama_hotel = $this->input->post('nama_hotel');
+		$lokasi = $this->input->post('lokasi');
+		$ratings = $this->input->post('ratings');
+		
+        $hotel = $this->M_hotel->searchHotel($nama_hotel, $lokasi, $ratings);
+
+		$data = array(
+			'hotel' => $hotel
+		);
+        $this->load->view('templates/header');
+		$this->load->view('User/hotel/search-hotel',$data);
+		$this->load->view('templates/footer');
+    }
 }

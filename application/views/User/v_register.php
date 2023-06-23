@@ -70,7 +70,7 @@ registerCSS/css/style.css">
                             <span class="social-label">Already registered?</span>
                             <ul class="socials">
                                 <li>
-                                    <a href="http://localhost/project-Healing/AuthLogin/login"
+                                    <a href="<?= base_url()?>index.php/AuthLogin/login"
                                         class="signup-image-link">Login</a>
                                 </li>
                             </ul>

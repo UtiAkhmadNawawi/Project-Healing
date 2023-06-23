@@ -26,11 +26,15 @@ class Booking extends CI_Controller {
 			redirect('AuthLogin/login');
 		}
 	}
-    public function index(){
-        // $data['mahasiswa'] = $this->M_mahasiswa->tampil_data()->result();
+    public function index($id){
+
+		$kamar = $this->M_kamar->getRoomById($id);
+
+		$data = array(
+			'kamar' => $kamar
+		);
         $this->load->view('templates/header');
-		$this->load->view('v_transaksi');
-        // $this->load->view('templates/mahasiswa', $data);
+		$this->load->view('v_booking', $data);
 		$this->load->view('templates/footer');
     }
 

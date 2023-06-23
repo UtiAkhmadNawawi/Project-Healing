@@ -169,8 +169,6 @@
                 </div>
 
             </div>
-            <button><a href="<?= base_url()?>index.php/Order/print_pdf">Cetak</a></button>
-            <button><a href="<?= base_url()?>index.php/home">Kembali</a></button>
 
         </section>
 

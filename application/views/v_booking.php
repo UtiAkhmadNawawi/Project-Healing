@@ -1,12 +1,11 @@
 <div class="col-md-12 hotel-single ftco-animate mb-5 mt-4">
-    <?php 
-				            if($this->session->flashdata('error') !='')
-				            {
-					            echo '<div class="alert alert-danger" role="alert">';
-					            echo $this->session->flashdata('error');
-					            echo '</div>';
-				            }
-				        ?>
+    <?php
+    if ($this->session->flashdata('error') != '') {
+        echo '<div class="alert alert-danger" role="alert">';
+        echo $this->session->flashdata('error');
+        echo '</div>';
+    }
+    ?>
     <form action="<?php echo base_url(); ?>Transaksi/proses" method="post">
         <h4 class="mb-5">Isi data &amp; Tamu</h4>
         <div class="fields">
@@ -14,6 +13,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <input type="text" class="form-control" name="nama" id="nama" placeholder="Name">
+                        <input type="text" class="form-control" name="room_id" hidden value="<?php echo $kamar->id; ?>">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -33,20 +33,17 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="text" class="form-control" name="no_identitas" id="no_identitas"
-                            placeholder="No KTP">
+                        <input type="text" class="form-control" name="no_identitas" id="no_identitas" placeholder="No KTP">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="text" name="checkin_date" id="checkin_date" class="form-control"
-                            placeholder="Date from">
+                        <input type="text" name="checkin_date" id="checkin_date" class="form-control" placeholder="Date from">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="text" name="checkout_date" id="checkin_date" class="form-control"
-                            placeholder="Date to">
+                        <input type="text" name="checkout_date" id="checkin_date" class="form-control" placeholder="Date to">
                     </div>
                 </div>
                 <div class="col-md-6">

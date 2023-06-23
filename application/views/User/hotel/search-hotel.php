@@ -18,8 +18,8 @@
         <div class="row">
             <div class="col-lg-3 sidebar">
                 <div class="sidebar-wrap bg-light ftco-animate">
-                <h3 class="heading mb-4">Find Hotel</h3>
-                    <form action="<?= site_url('search-hotel')?>" method="post">
+                    <h3 class="heading mb-4">Find Hotel</h3>
+                    <form action="<?= site_url('search-hotel') ?>" method="post">
                         <div class="fields">
                             <div class="form-group">
                                 <input name="nama_hotel" type="text" class="form-control" placeholder="nama hotel">
@@ -27,9 +27,9 @@
                             <div class="form-group">
                                 <div class="select-wrap one-third">
                                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                    <select name="lokasi"  class="form-control" placeholder="Keyword search">
+                                    <select name="lokasi" class="form-control" placeholder="Keyword search">
                                         <option value="" selected>Where</option>
-        
+
                                         <option value="Jakarta">Jakarta</option>
                                         <option value="Semarang">Semarang</option>
                                         <option value="Bandung">Bandung</option>
@@ -72,7 +72,7 @@
 
 
                             <div class="form-group">
-                                <input type="submit"class="btn btn-primary py-3 px-5">
+                                <input type="submit" class="btn btn-primary py-3 px-5">
                             </div>
                         </div>
                     </form>
@@ -156,21 +156,7 @@
                         </div>
                     <?php endforeach; ?>
                 </div>
-                <div class="row mt-5">
-                    <div class="col text-center">
-                        <div class="block-27">
-                            <ul>
-                                <li><a href="#">&lt;</a></li>
-                                <li class="active"><span>1</span></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">&gt;</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                
             </div> <!-- .col-md-8 -->
         </div>
     </div>

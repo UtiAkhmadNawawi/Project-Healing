@@ -7,7 +7,7 @@
                         <div class="nk-block-head-content">
                             <h3 class="nk-block-title page-title">Booking Lists</h3>
                             <div class="nk-block-des text-soft">
-                                <p>You have total 2,595 booking's.</p>
+                                
                             </div>
                         </div>
                         <div class="nk-block-head-content">
@@ -16,10 +16,10 @@
                                         class="icon ni ni-menu-alt-r"></em></a>
                                 <div class="toggle-expand-content" data-content="pageMenu">
                                     <ul class="nk-block-tools g-3">
-                                        <li><a href="#" class="btn btn-white btn-outline-light"><em
+                                        <!-- <li><a href="#" class="btn btn-white btn-outline-light"><em
                                                     class="icon ni ni-download-cloud"></em><span>Export</span></a>
-                                        </li>
-                                        <li class="nk-block-tools-opt">
+                                        </li> -->
+                                        <!-- <li class="nk-block-tools-opt">
                                             <div class="drodown"><a href="#"
                                                     class="dropdown-toggle btn btn-icon btn-primary"
                                                     data-bs-toggle="dropdown"><em class="icon ni ni-plus"></em></a>
@@ -32,7 +32,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -46,13 +46,13 @@
                                 <div class="card-title-group">
                                     <div class="card-tools">
                                         <div class="form-inline flex-nowrap gx-3">
-                                            <div class="form-wrap w-150px"><select
+                                            <!-- <div class="form-wrap w-150px"><select
                                                     class="form-select js-select2 js-select2-sm" data-search="off"
                                                     data-placeholder="Bulk Action">
                                                     <option value="">Bulk Action</option>
                                                     <option value="email">Send Email</option>
                                                     <option value="delete">Delete Booking</option>
-                                                </select></div>
+                                                </select></div> -->
                                             <div class="btn-wrap"><span class="d-none d-md-block"><button
                                                         class="btn btn-dim btn-outline-light disabled">Apply</button></span><span
                                                     class="d-md-none"><button
@@ -61,7 +61,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card-tools me-n1">
+                                    <!-- <div class="card-tools me-n1">
                                         <ul class="btn-toolbar gx-1">
                                             <li><a href="#" class="btn btn-icon search-toggle toggle-search"
                                                     data-target="search"><em class="icon ni ni-search"></em></a></li>
@@ -194,7 +194,7 @@
                                                 </div>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="card-search search-wrap" data-search="search">
                                     <div class="card-body">
@@ -211,22 +211,22 @@
                             <div class="card-inner p-0">
                                 <div class="nk-tb-list nk-tb-ulist">
                                     <div class="nk-tb-item nk-tb-head">
-                                        <div class="nk-tb-col nk-tb-col-check">
+                                        <!-- <div class="nk-tb-col nk-tb-col-check">
                                             <div class="custom-control custom-control-sm custom-checkbox notext">
                                                 <input type="checkbox" class="custom-control-input" id="uid"><label
                                                     class="custom-control-label" for="uid"></label>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="nk-tb-col"><span class="sub-text">ID</span></div>
-                                        <div class="nk-tb-col"><span class="sub-text">Customer</span>
-                                        </div>
+                                        <!-- <div class="nk-tb-col"><span class="sub-text">Customer</span>
+                                        </div> -->
                                         <div class="nk-tb-col tb-col-mb"><span class="sub-text">Package</span></div>
                                         <div class="nk-tb-col tb-col-md"><span class="sub-text">Booking</span></div>
                                         <div class="nk-tb-col tb-col-lg"><span class="sub-text">Room
                                                 Type</span></div>
                                         <div class="nk-tb-col tb-col-xxl"><span class="sub-text">Mobile</span></div>
-                                        <div class="nk-tb-col tb-col-lg"><span class="sub-text">Arrive</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span class="sub-text">Depart</span></div>
+                                        <!-- <div class="nk-tb-col tb-col-lg"><span class="sub-text">Arrive</span></div> -->
+                                        <!-- <div class="nk-tb-col tb-col-xxl"><span class="sub-text">Depart</span></div> -->
                                         <div class="nk-tb-col tb-col-md"><span class="sub-text">Payment</span></div>
                                         <div class="nk-tb-col nk-tb-col-tools text-end">
                                             <div class="dropdown"><a href="#"
@@ -265,139 +265,35 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <?php foreach($payment as $p): ?>
                                     <div class="nk-tb-item">
-                                        <div class="nk-tb-col nk-tb-col-check">
+                                        <!-- <div class="nk-tb-col nk-tb-col-check">
                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                <input type="checkbox" class="custom-control-input" id="uid1"><label
-                                                    class="custom-control-label" for="uid1"></label>
+                                                <input type="checkbox" class="custom-control-input" id="uid1">
+                                                <label class="custom-control-label" for="uid1"></label>
                                             </div>
-                                        </div>
-                                        <div class="nk-tb-col"><span class="text-primary">AB-357</span>
+                                        </div> -->
+
+                                        <div class="nk-tb-col"><span class="text-primary"><?=$p->id; ?></span>
                                         </div>
                                         <div class="nk-tb-col"><a href="#">
                                                 <div class="user-card">
-                                                    <div class="user-avatar bg-primary"><span>AB</span>
-                                                    </div>
-                                                    <div class="user-info"><span class="tb-lead">Abu Bin
-                                                            Ishtiyak <span
-                                                                class="dot dot-success d-md-none ms-1"></span></span><span>info@softnio.com</span>
-                                                    </div>
-                                                </div>
-                                            </a></div>
-                                        <div class="nk-tb-col tb-col-mb"><span>Continental</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Active</span></div>
-                                        <div class="nk-tb-col tb-col-lg"><span>Super Delux</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>+811 847-4958</span>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-lg"><span>10 Feb 2020</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>12 Feb 2020</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Paid</span></div>
-                                        <div class="nk-tb-col nk-tb-col-tools">
-                                            <ul class="nk-tb-actions gx-1">
-                                                <li>
-                                                    <div class="drodown"><a href="#"
-                                                            class="dropdown-toggle btn btn-icon btn-trigger"
-                                                            data-bs-toggle="dropdown"><em
-                                                                class="icon ni ni-more-h"></em></a>
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <ul class="link-list-opt no-bdr">
-                                                                <li><a href="#"><em
-                                                                            class="icon ni ni-mail-fill"></em><span>Send
-                                                                            Email</span></a></li>
-                                                                <li><a href="/demo1/hotel/booking-edit.html"><em
-                                                                            class="icon ni ni-edit-fill"></em><span>Edit</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="nk-tb-item">
-                                        <div class="nk-tb-col nk-tb-col-check">
-                                            <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                <input type="checkbox" class="custom-control-input" id="uid2"><label
-                                                    class="custom-control-label" for="uid2"></label>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col"><span class="text-primary">AB-753</span>
-                                        </div>
-                                        <div class="nk-tb-col">
-                                            <div class="user-card">
-                                                <div class="user-avatar"><img src="/demo1/images/avatar/a-sm.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="user-info"><span class="tb-lead">Ashley
-                                                        Lawson <span
-                                                            class="dot dot-warning d-md-none ms-1"></span></span><span>ashley@softnio.com</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-mb"><span>Strater </span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-warning">Pending</span></div>
-                                        <div class="nk-tb-col tb-col-lg"><span>Single</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>+124 394-1787</span>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-lg"><span>07 Feb 2021</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>08 Feb 2021</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span class="tb-status text-warning">Due</span>
-                                        </div>
-                                        <div class="nk-tb-col nk-tb-col-tools">
-                                            <ul class="nk-tb-actions gx-1">
-                                                <li>
-                                                    <div class="drodown"><a href="#"
-                                                            class="dropdown-toggle btn btn-icon btn-trigger"
-                                                            data-bs-toggle="dropdown"><em
-                                                                class="icon ni ni-more-h"></em></a>
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <ul class="link-list-opt no-bdr">
-                                                                <li><a href="#"><em
-                                                                            class="icon ni ni-mail-fill"></em><span>Send
-                                                                            Email</span></a></li>
-                                                                <li><a href="/demo1/hotel/booking-edit.html"><em
-                                                                            class="icon ni ni-edit-fill"></em><span>Edit</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="nk-tb-item">
-                                        <div class="nk-tb-col nk-tb-col-check">
-                                            <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                <input type="checkbox" class="custom-control-input" id="uid3"><label
-                                                    class="custom-control-label" for="uid3"></label>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col"><span class="text-primary">AB-159</span>
-                                        </div>
-                                        <div class="nk-tb-col"><a href="#">
-                                                <div class="user-card">
-                                                    <div class="user-avatar bg-dark"><span>MM</span>
-                                                    </div>
-                                                    <div class="user-info"><span class="tb-lead">Micheal
-                                                            Murphy <span
-                                                                class="dot dot-success d-md-none ms-1"></span></span><span>info@niosoft.com</span>
+                                                    <!-- <div class="user-avatar bg-primary"><span>AB</span>
+                                                    </div> -->
+                                                    <div class="user-info"><span class="tb-lead"><?=$p->username; ?><span
+                                                                class="dot dot-success d-md-none ms-1"></span></span><span><?=$p->email; ?></span>
                                                     </div>
                                                 </div>
                                             </a></div>
-                                        <div class="nk-tb-col tb-col-mb"><span>All Suit</span></div>
+                                        <!-- <div class="nk-tb-col tb-col-mb"><span>Continental</span></div> -->
                                         <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Active</span></div>
-                                        <div class="nk-tb-col tb-col-lg"><span>Super Delux</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>+811 569-6523</span>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-lg"><span>10 Jan 2021</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>15 Jan 2021</span></div>
+                                                class="tb-status text-success"><?=$p->nama_hotel; ?></span></div>
+                                        <div class="nk-tb-col tb-col-lg"><span><?=$p->type; ?></span></div>
+                                        
+                                        <!-- <div class="nk-tb-col tb-col-lg"><span><?=$p->checkout_date; ?></span></div> -->
                                         <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Paid</span></div>
-                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                class="tb-status text-success">Lunas</span></div>
+                                        <!-- <div class="nk-tb-col nk-tb-col-tools">
                                             <ul class="nk-tb-actions gx-1">
                                                 <li>
                                                     <div class="drodown"><a href="#"
@@ -417,367 +313,10 @@
                                                     </div>
                                                 </li>
                                             </ul>
-                                        </div>
+                                        </div> -->
                                     </div>
-                                    <div class="nk-tb-item">
-                                        <div class="nk-tb-col nk-tb-col-check">
-                                            <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                <input type="checkbox" class="custom-control-input" id="uid4"><label
-                                                    class="custom-control-label" for="uid4"></label>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col"><span class="text-primary">AB-951</span>
-                                        </div>
-                                        <div class="nk-tb-col">
-                                            <div class="user-card">
-                                                <div class="user-avatar"><img src="/demo1/images/avatar/b-sm.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="user-info"><span class="tb-lead">Eliana
-                                                        Stout <span
-                                                            class="dot dot-warning d-md-none ms-1"></span></span><span>Eliana@softnio.com</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-mb"><span>Vacation</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Active</span></div>
-                                        <div class="nk-tb-col tb-col-lg"><span>Double</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>+124 394-1787</span>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-lg"><span>07 Feb 2021</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>15 Feb 2021</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Paid</span></div>
-                                        <div class="nk-tb-col nk-tb-col-tools">
-                                            <ul class="nk-tb-actions gx-1">
-                                                <li>
-                                                    <div class="drodown"><a href="#"
-                                                            class="dropdown-toggle btn btn-icon btn-trigger"
-                                                            data-bs-toggle="dropdown"><em
-                                                                class="icon ni ni-more-h"></em></a>
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <ul class="link-list-opt no-bdr">
-                                                                <li><a href="#"><em
-                                                                            class="icon ni ni-mail-fill"></em><span>Send
-                                                                            Email</span></a></li>
-                                                                <li><a href="/demo1/hotel/booking-edit.html"><em
-                                                                            class="icon ni ni-edit-fill"></em><span>Edit</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="nk-tb-item">
-                                        <div class="nk-tb-col nk-tb-col-check">
-                                            <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                <input type="checkbox" class="custom-control-input" id="uid5"><label
-                                                    class="custom-control-label" for="uid5"></label>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col"><span class="text-primary">AB-903</span>
-                                        </div>
-                                        <div class="nk-tb-col"><a href="#">
-                                                <div class="user-card">
-                                                    <div class="user-avatar bg-warning"><span>LH</span>
-                                                    </div>
-                                                    <div class="user-info"><span class="tb-lead">Luukas
-                                                            Haapala<span
-                                                                class="dot dot-success d-md-none ms-1"></span></span><span>Luukas@niosoft.com</span>
-                                                    </div>
-                                                </div>
-                                            </a></div>
-                                        <div class="nk-tb-col tb-col-mb"><span>Honeymoon</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Active</span></div>
-                                        <div class="nk-tb-col tb-col-lg"><span>Double</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>+811 569-6523</span>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-lg"><span>02 May 2021</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>04 May 2021</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Paid</span></div>
-                                        <div class="nk-tb-col nk-tb-col-tools">
-                                            <ul class="nk-tb-actions gx-1">
-                                                <li>
-                                                    <div class="drodown"><a href="#"
-                                                            class="dropdown-toggle btn btn-icon btn-trigger"
-                                                            data-bs-toggle="dropdown"><em
-                                                                class="icon ni ni-more-h"></em></a>
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <ul class="link-list-opt no-bdr">
-                                                                <li><a href="#"><em
-                                                                            class="icon ni ni-mail-fill"></em><span>Send
-                                                                            Email</span></a></li>
-                                                                <li><a href="/demo1/hotel/booking-edit.html"><em
-                                                                            class="icon ni ni-edit-fill"></em><span>Edit</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="nk-tb-item">
-                                        <div class="nk-tb-col nk-tb-col-check">
-                                            <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                <input type="checkbox" class="custom-control-input" id="uid6"><label
-                                                    class="custom-control-label" for="uid6"></label>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col"><span class="text-primary">AB-256</span>
-                                        </div>
-                                        <div class="nk-tb-col">
-                                            <div class="user-card">
-                                                <div class="user-avatar"><img src="/demo1/images/avatar/c-sm.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="user-info"><span class="tb-lead">Azul
-                                                        Baldwin<span
-                                                            class="dot dot-warning d-md-none ms-1"></span></span><span>Azul@softnio.com</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-mb"><span>Vacation</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-warning">Pending</span></div>
-                                        <div class="nk-tb-col tb-col-lg"><span>Double</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>+124 156-8756</span>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-lg"><span>07 Jan 2021</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>10 Jan 2021</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span class="tb-status text-warning">Due</span>
-                                        </div>
-                                        <div class="nk-tb-col nk-tb-col-tools">
-                                            <ul class="nk-tb-actions gx-1">
-                                                <li>
-                                                    <div class="drodown"><a href="#"
-                                                            class="dropdown-toggle btn btn-icon btn-trigger"
-                                                            data-bs-toggle="dropdown"><em
-                                                                class="icon ni ni-more-h"></em></a>
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <ul class="link-list-opt no-bdr">
-                                                                <li><a href="#"><em
-                                                                            class="icon ni ni-mail-fill"></em><span>Send
-                                                                            Email</span></a></li>
-                                                                <li><a href="/demo1/hotel/booking-edit.html"><em
-                                                                            class="icon ni ni-edit-fill"></em><span>Edit</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="nk-tb-item">
-                                        <div class="nk-tb-col nk-tb-col-check">
-                                            <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                <input type="checkbox" class="custom-control-input" id="uid7"><label
-                                                    class="custom-control-label" for="uid7"></label>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col"><span class="text-primary">AB-503</span>
-                                        </div>
-                                        <div class="nk-tb-col"><a href="#">
-                                                <div class="user-card">
-                                                    <div class="user-avatar bg-primary"><span>DL</span>
-                                                    </div>
-                                                    <div class="user-info"><span class="tb-lead">Dasia
-                                                            Lovell<span
-                                                                class="dot dot-success d-md-none ms-1"></span></span><span>dasia@softnio.com</span>
-                                                    </div>
-                                                </div>
-                                            </a></div>
-                                        <div class="nk-tb-col tb-col-mb"><span>Continental</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-warning">Pending</span></div>
-                                        <div class="nk-tb-col tb-col-lg"><span>Double</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>+811 963-4759</span>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-lg"><span>10 Feb 2020</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>12 Feb 2020</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span class="tb-status text-warning">Due</span>
-                                        </div>
-                                        <div class="nk-tb-col nk-tb-col-tools">
-                                            <ul class="nk-tb-actions gx-1">
-                                                <li>
-                                                    <div class="drodown"><a href="#"
-                                                            class="dropdown-toggle btn btn-icon btn-trigger"
-                                                            data-bs-toggle="dropdown"><em
-                                                                class="icon ni ni-more-h"></em></a>
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <ul class="link-list-opt no-bdr">
-                                                                <li><a href="#"><em
-                                                                            class="icon ni ni-mail-fill"></em><span>Send
-                                                                            Email</span></a></li>
-                                                                <li><a href="/demo1/hotel/booking-edit.html"><em
-                                                                            class="icon ni ni-edit-fill"></em><span>Edit</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="nk-tb-item">
-                                        <div class="nk-tb-col nk-tb-col-check">
-                                            <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                <input type="checkbox" class="custom-control-input" id="uid8"><label
-                                                    class="custom-control-label" for="uid8"></label>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col"><span class="text-primary">AB-856</span>
-                                        </div>
-                                        <div class="nk-tb-col">
-                                            <div class="user-card">
-                                                <div class="user-avatar"><img src="/demo1/images/avatar/d-sm.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="user-info"><span class="tb-lead">Novalee
-                                                        Spicer<span
-                                                            class="dot dot-warning d-md-none ms-1"></span></span><span>Novalee@softnio.com</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-mb"><span>Strater</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Active</span></div>
-                                        <div class="nk-tb-col tb-col-lg"><span>Single</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>+124 394-1787</span>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-lg"><span>07 Feb 2021</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>09 Feb 2021</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Paid</span></div>
-                                        <div class="nk-tb-col nk-tb-col-tools">
-                                            <ul class="nk-tb-actions gx-1">
-                                                <li>
-                                                    <div class="drodown"><a href="#"
-                                                            class="dropdown-toggle btn btn-icon btn-trigger"
-                                                            data-bs-toggle="dropdown"><em
-                                                                class="icon ni ni-more-h"></em></a>
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <ul class="link-list-opt no-bdr">
-                                                                <li><a href="#"><em
-                                                                            class="icon ni ni-mail-fill"></em><span>Send
-                                                                            Email</span></a></li>
-                                                                <li><a href="/demo1/hotel/booking-edit.html"><em
-                                                                            class="icon ni ni-edit-fill"></em><span>Edit</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="nk-tb-item">
-                                        <div class="nk-tb-col nk-tb-col-check">
-                                            <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                <input type="checkbox" class="custom-control-input" id="uid9"><label
-                                                    class="custom-control-label" for="uid9"></label>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col"><span class="text-primary">AB-635</span>
-                                        </div>
-                                        <div class="nk-tb-col"><a href="#">
-                                                <div class="user-card">
-                                                    <div class="user-avatar bg-dark"><span>Cl</span>
-                                                    </div>
-                                                    <div class="user-info"><span class="tb-lead">Cielo
-                                                            Luna<span
-                                                                class="dot dot-success d-md-none ms-1"></span></span><span>cielo@niosoft.com</span>
-                                                    </div>
-                                                </div>
-                                            </a></div>
-                                        <div class="nk-tb-col tb-col-mb"><span>All Suit</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Active</span></div>
-                                        <div class="nk-tb-col tb-col-lg"><span>Double</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>+811 569-6523</span>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-lg"><span>10 Jan 2021</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>12 Jan 2021</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Paid</span></div>
-                                        <div class="nk-tb-col nk-tb-col-tools">
-                                            <ul class="nk-tb-actions gx-1">
-                                                <li>
-                                                    <div class="drodown"><a href="#"
-                                                            class="dropdown-toggle btn btn-icon btn-trigger"
-                                                            data-bs-toggle="dropdown"><em
-                                                                class="icon ni ni-more-h"></em></a>
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <ul class="link-list-opt no-bdr">
-                                                                <li><a href="#"><em
-                                                                            class="icon ni ni-mail-fill"></em><span>Send
-                                                                            Email</span></a></li>
-                                                                <li><a href="/demo1/hotel/booking-edit.html"><em
-                                                                            class="icon ni ni-edit-fill"></em><span>Edit</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="nk-tb-item">
-                                        <div class="nk-tb-col nk-tb-col-check">
-                                            <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                <input type="checkbox" class="custom-control-input" id="uid10"><label
-                                                    class="custom-control-label" for="uid10"></label>
-                                            </div>
-                                        </div>
-                                        <div class="nk-tb-col"><span class="text-primary">AB-605</span>
-                                        </div>
-                                        <div class="nk-tb-col"><a href="#">
-                                                <div class="user-card">
-                                                    <div class="user-avatar bg-danger"><span>MY</span>
-                                                    </div>
-                                                    <div class="user-info"><span class="tb-lead">Makiyah
-                                                            Yeager<span
-                                                                class="dot dot-success d-md-none ms-1"></span></span><span>makiyah@niosoft.com</span>
-                                                    </div>
-                                                </div>
-                                            </a></div>
-                                        <div class="nk-tb-col tb-col-mb"><span>Honeymoon</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Active</span></div>
-                                        <div class="nk-tb-col tb-col-lg"><span>Delux</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>+811 569-6523</span>
-                                        </div>
-                                        <div class="nk-tb-col tb-col-lg"><span>02 May 2021</span></div>
-                                        <div class="nk-tb-col tb-col-xxl"><span>04 May 2021</span></div>
-                                        <div class="nk-tb-col tb-col-md"><span
-                                                class="tb-status text-success">Paid</span></div>
-                                        <div class="nk-tb-col nk-tb-col-tools">
-                                            <ul class="nk-tb-actions gx-1">
-                                                <li>
-                                                    <div class="drodown"><a href="#"
-                                                            class="dropdown-toggle btn btn-icon btn-trigger"
-                                                            data-bs-toggle="dropdown"><em
-                                                                class="icon ni ni-more-h"></em></a>
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <ul class="link-list-opt no-bdr">
-                                                                <li><a href="#"><em
-                                                                            class="icon ni ni-mail-fill"></em><span>Send
-                                                                            Email</span></a></li>
-                                                                <li><a href="/demo1/hotel/booking-edit.html"><em
-                                                                            class="icon ni ni-edit-fill"></em><span>Edit</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <?php endforeach; ?>
+                                    
                                     </div>
                                 </div>
                             </div>

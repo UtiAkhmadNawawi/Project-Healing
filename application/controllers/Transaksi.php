@@ -79,10 +79,14 @@ class Transaksi extends CI_Controller {
 		else
 		{
 			// data tamu
+			$user_id = $this->session->userdata('user_id');
+        	$user = $this->M_user->get_user($user_id);
+			$room_id = $this->input->post('room_id');
+
 			$username = $this->input->post('nama');
 			$alamat = $this->input->post('alamat');
 			$identitasNO = $this->input->post('no_identitas');
-			$telepon = $this->input->post('telepon');
+			$phone = $this->input->post('telepon');
 			$kota = $this->input->post('kota');
 			//data reservasi
 			$child = $this->input->post('child');
@@ -91,10 +95,50 @@ class Transaksi extends CI_Controller {
 			$checkin_date = $this->input->post('checkin_date');
 			$checkout_date = $this->input->post('checkout_date');
 
-			$this->M_tamu->dataTamu($username,$alamat,$identitasNO,$telepon,$kota);
-			$this->M_reservation->dataReservation($username,$Bed,$child,$guest,$checkin_date,$checkout_date);
+			$kamar = $this->M_kamar->getRoomById($room_id);
+			$hotel_id = $kamar->id_hotel;
+
+			$this->M_reservation->dataReservation($username,$Bed,$child,$guest,$checkin_date,$checkout_date, $user_id, $hotel_id, $room_id, $phone);
 			$this->session->set_flashdata('success_register','Proses Pendaftaran User Berhasil');
-			redirect('Invoice');
+			redirect('Transaksi/checkout');
 		}
 	}
+
+	public function checkout()
+	{
+
+		$user_id = $this->session->userdata('user_id');
+
+		$order = $this->M_reservation->getLastOrderByUserId($user_id);
+		// var_dump($user_id);
+		// exit();
+
+		$data = array(
+			'order' => $order
+		);
+		$this->load->view('v_bayar', $data);
+	}
+
+	public function payment()
+	{
+		$user_id = $this->session->userdata('user_id');
+
+		$order = $this->M_reservation->getLastOrderByUserId($user_id);
+
+		$data_reservation = array(
+            
+			'user_id' => $order->user_id,
+			'hotel_id' => $order->hotel_id,
+			'kamar_id' => $order->room_id,
+			'subtotal' => $order->harga,
+			'status' => 'Lunas'
+		);
+		$this->db->insert('tb_payment',$data_reservation);		
+
+		$data = array(
+			'order' => $order
+		);
+		$this->load->view('v_invoice', $data);
+	}
+	
 }

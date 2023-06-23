@@ -29,13 +29,21 @@ class Home extends CI_Controller {
     }
 	public function index(){
         // $data['mahasiswa'] = $this->M_mahasiswa->tampil_data()->result();
-		$data['tb_kamar'] = $this->M_kamar->data_kamar();
+		// $data['tb_kamar'] = $this->M_kamar->getAllRoom();
 		// var_dump($datauser["current_user"] = $this->M_authLogin->current_user());exit();
-		$datauser["current_user"] = $this->M_authLogin->current_user();
+		$user = $this->M_authLogin->current_user();
+		$kamar = $this->M_kamar->getAllRoom();
+		$hotel = $this->M_hotel->getAllHotel();
+
+		$data = array(
+			'user' => $user,
+			'kamar' => $kamar,
+			'hotel' => $hotel
+		);
+		
 
         $this->load->view('templates/header');
-		$this->load->view('v_home',$data,$datauser);
-        // $this->load->view('templates/mahasiswa', $data);
+		$this->load->view('v_home',$data);
 		$this->load->view('templates/footer');
     }
 }

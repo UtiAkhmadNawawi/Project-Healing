@@ -21,7 +21,7 @@ registerCSS/css/style.css">
             <div class="signin-image">
                 <figure><img src="<?php echo base_url() ?>
 registerCSS/images/signin-image.jpg" alt="sing up image"></figure>
-                <a href="http://localhost/project-Healing/AuthLogin/register" class="signup-image-link">Create an
+                <a href="<?= base_url()?>index.php/AuthLogin/register" class="signup-image-link">Create an
                     account</a>
             </div>
 

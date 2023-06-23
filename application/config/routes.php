@@ -52,3 +52,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'AuthLogin/login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+//admin
+$route['dashboard'] = 'Admin/Admin/index';
+$route['Admin-booking'] = 'Admin/Admin/Bookinglist';
+$route['admin-room'] = 'Admin/Admin/Roomlist';
+$route['admin-hotel'] = 'Admin/Admin/Hotel';
+$route['admin-customer'] = 'Admin/Admin/Customerlist';
+$route['admin-payment'] = 'Admin/Admin/Paymentlist';
+$route['admin-support'] = 'Admin/Admin/Support';
+$route['admin-setting'] = 'Admin/Admin/Setting';
+
+//hotel
+$route['hotel-create'] = 'Admin/Hotel/Create';
+$route['upload-process'] = 'Admin/Upload/process';
+$route['hotel-edit/(:any)'] = 'Admin/Hotel/edit/$1';
+$route['hotel-update'] = 'Admin/Hotel/update';
+$route['hotel-delete/(:any)'] = 'Admin/Hotel/delete/$1';
+
+//kamar
+$route['room-create'] = 'Admin/Kamar/Create';
+$route['room-edit/(:any)'] = 'Admin/Kamar/edit/$1';
+$route['room-update'] = 'Admin/Kamar/update';
+$route['room-delete/(:any)'] = 'Admin/Kamar/delete/$1';
+
+//invoice-admin
+$route['invoice-detail/(:any)'] = 'Admin/Admin/Invoicedetails/$1';
+$route['invoice-printPDF/(:any)'] = 'Admin/Admin/invoice_print_pdf/$1';
+
+
+//customer-hotel
+$route['daftar-kamar/(:any)'] = 'Hotel/getKamarByHotel/$1';
+$route['search-hotel'] = 'Hotel/searchHotel';
+
+//booking
+$route['booking/(:any)'] = 'Booking/index/$1';
+
+//payment
+$route['payment'] = 'Transaksi/payment';
+
+
